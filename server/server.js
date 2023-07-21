@@ -3,13 +3,8 @@ const request = require("request");
 const cors = require("cors");
 
 const app = express();
-app.use(cors(
-  {
-    origin: "*",
-  }
-));
+app.use(cors());
 app.use(express.json()); 
-
 
 app.post("/api", (req, res) => {
   const city = req.body.cityName; 
