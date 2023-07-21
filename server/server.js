@@ -6,6 +6,9 @@ const app = express();
 app.use(cors());
 app.use(express.json()); 
 
+app.get("/", (req, res)=>{
+  res.json("Hello")
+})
 app.post("/api", (req, res) => {
   const city = req.body.cityName; 
   request(
