@@ -47,6 +47,7 @@
   font-weight: bold;
   margin: 10px;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 .displayContainer {
   display: flex;
