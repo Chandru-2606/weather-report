@@ -35,7 +35,7 @@ function App() {
         </div>
         <h1>{displayData?.message}</h1>
 
-        {displayData && cityName ? (
+        {displayData.name  ? (
           <div className="displayContainer">
             <div className="imageContainer">
               <div>
@@ -76,4 +76,3 @@ function App() {
 }
 
 export default App;
-
