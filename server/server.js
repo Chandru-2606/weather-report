@@ -5,9 +5,8 @@ const cors = require("cors");
 const app = express();
 app.use(cors(
   {
-    origin:["https://weather-report-frontend.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials:true
+    origin:"https://weather-report-frontend.vercel.app"
+    
   }
 ));
 app.use(express.json()); 
