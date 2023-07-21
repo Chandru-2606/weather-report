@@ -10,7 +10,7 @@ function App() {
     let body = { cityName };
 
     axios
-      .post("http://localhost:5000/api", body)
+      .post("https://weather-report-red.vercel.app/api", body)
       .then(function (response) {
         setDisplayData(response?.data);
       })
