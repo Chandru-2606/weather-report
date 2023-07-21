@@ -3,13 +3,7 @@ const request = require("request");
 const cors = require("cors");
 
 const app = express();
-app.use(cors(
-  {
-    origin:["https://weather-report-frontend.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials:true
-  }
-));
+
 app.use(express.json()); 
 
 app.get("/", (req, res)=>{
