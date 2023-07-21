@@ -10,7 +10,7 @@ function App() {
     let body = { cityName };
 
     axios
-      .post("https://weather-report-red.vercel.app/api", body)
+      .post("http://localhost:5000/api", body)
       .then(function (response) {
         setDisplayData(response?.data);
       })
@@ -76,3 +76,4 @@ function App() {
 }
 
 export default App;
+
